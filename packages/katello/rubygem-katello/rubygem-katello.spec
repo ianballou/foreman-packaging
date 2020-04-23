@@ -8,7 +8,7 @@
 %global prereleasesource pre.master
 %global prerelease %{?prereleasesource:.}%{?prereleasesource}
 %global mainver 3.16.0
-%global release 10
+%global release 11
 
 Name:    %{?scl_prefix}rubygem-%{gem_name}
 Summary: Content and Subscription Management plugin for Foreman
@@ -233,6 +233,9 @@ cp -pa .%{gem_dir}/* \
 %{gem_instdir}/webpack
 
 %changelog
+* Mon Apr 23 2020 ianballou <ianballou67@gmail.com> 3.16.0-0.11.pre.master
+- Add fx gem as a dependency
+
 * Fri Apr 17 2020 Jonathon Turel <jturel@gmail.com> 3.16.0-0.10.pre.master
 - Replace qpid_messaging with stomp
 
